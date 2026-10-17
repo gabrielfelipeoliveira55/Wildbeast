@@ -15,7 +15,9 @@
 
 img {
 
+  display: block;
   max-width: 100%;
+  border-radius: 0.3125rem; /* 5px */
 
 }
 
@@ -125,21 +127,39 @@ img {
 
 }
 
+/* ? MAIN */
+
 .main {
 
   grid-area: content;
 
 }
 
+/* ? ADS */
+
 .ads {
 
   grid-area: ads;
+  background: var(--base-color-200);
+  display: grid;
+  align-content: start;
+  padding: 1.875rem; /* 30px */
+  gap: 1.875rem; /* 30px */
+  /* grid-template-rows: repeat(2, 250px); */
 
 }
 
 .footer {
 
   grid-area: footer;
+  background: var(--bg-gradient-h);
 
 }
 
+.footer p {
+
+  color: var(--base-color-100);
+  text-align: center;
+  padding: 1.875rem; /* 30px */
+ 
+}
