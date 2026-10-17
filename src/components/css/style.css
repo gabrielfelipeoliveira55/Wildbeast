@@ -33,6 +33,7 @@ img {
   --color-opacity-10: #0000001a;
   --color-opacity-15: #2C2C2C26;
   --color-opacity-50: #00000080;
+  --color-opacity-70: #000000b3;
 
   --bg-gradient-h: linear-gradient(135deg, var(--special-color-300), var(--special-color-200));
 
@@ -45,7 +46,7 @@ img {
 
   display: grid;
   grid: "header header header" 
-        "sidenav content ads"
+        "sidenav main ads"
         "footer footer footer" 
         / minmax(10rem, 1fr) 3fr 18.75rem;
 
@@ -131,7 +132,115 @@ img {
 
 .main {
 
-  grid-area: content;
+  max-width: 56.25rem; /* 900px */
+  grid-area: main;
+  margin: 0 auto;
+  padding: 1.875rem; /* 30px */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem; /* 30px */
+
+}
+
+.col-wide {
+
+  grid-column: 1 / -1;
+
+}
+
+.img-1 {
+
+  grid-row: span 2;
+  align-self: end;
+
+}
+
+.img-2 {
+
+  align-self: end;
+
+}
+
+/* ? Estilos Gerais do Main */
+p {
+
+  font-size: 1.2rem; /* 19.2px */
+  line-height: 1.6;
+  letter-spacing: -0.005rem; /* -0.08px */
+  color: var(--color-opacity-70);
+
+}
+
+.information p + p {
+
+  margin-top: 1.875rem; /* 30px */
+
+}
+
+/* ? Title */
+.container-title {
+
+  color: var(--special-color-200);
+
+}
+
+.title {
+
+  font-size: 3.75rem; /* 60px */
+  line-height: 1;
+  font-weight: 700;
+
+}
+
+.subtitle {
+
+  font-size: 0.875rem; /* 14px */
+  font-style: italic;
+
+}
+
+/* ? Container Atrributes */
+.container-attributes {
+
+  display: flex;
+  gap: 1.875rem; /* 30px */
+  align-items: start;
+
+}
+
+.atrribute {
+
+  width: 5rem; /* 80px */
+  text-align: center;
+  background: var(--bg-gradient-h);
+  border-radius: 0.3125rem; /* 5px */
+  box-shadow: var(--box-shadow-1);
+  position: relative;
+
+}
+
+.atrribute span {
+
+  display: block;
+  color: var(--special-color-200);
+
+}
+
+.number {
+
+  font-size: 3rem; /* 48px */
+  line-height: 1;
+  margin: 0.625rem auto; /* 10px */
+
+}
+
+.label-units {
+
+  background: var(--base-color-100);
+  border-radius: 0rem 0rem 0.3125rem 0.3125rem; /* 0px 0px 5px 5px */
+  padding: 0.3125rem 0rem; /* 5px 0px */
+  position: relative;
+  top: 0.125rem; /* 2px */
 
 }
 
