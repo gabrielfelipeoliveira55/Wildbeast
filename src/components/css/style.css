@@ -55,6 +55,36 @@ img {
 
 }
 
+/* ? Brackpoints 1200px GRID */
+@media screen and (max-width: 1200px) {
+
+  .grid {
+
+    grid-template-areas: "header header header"
+                         "sidenav main main"
+                         "sidenav ads ads"
+                         "footer footer footer";
+
+  }
+
+}
+
+/* ? Brackpoints 760px GRID */
+@media screen and (max-width: 760px) {
+
+  .grid {
+
+    grid-template: "header"
+                    "sidenav"
+                    "main"
+                    "ads"
+                    "footer"
+                    / 100%;
+
+  }
+
+}
+
 /* ? HEADER */
 
 .header {
