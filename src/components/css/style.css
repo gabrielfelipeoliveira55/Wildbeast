@@ -10,6 +10,7 @@
   list-style-type: none;
   box-sizing: border-box;
   font-family: "Vollkorn", Georgia, serif;
+  scroll-behavior: smooth;
 
 }
 
@@ -33,6 +34,7 @@ img {
 
   --color-opacity-10: #0000001a;
   --color-opacity-15: #2c2c2c26;
+  --color-opacity-40: rgba(0, 0, 0, 0.4);
   --color-opacity-50: #00000080;
   --color-opacity-70: #000000b3;
 
@@ -131,6 +133,30 @@ img {
 
 }
 
+/* ? Brackpoints 760px NAV */
+@media screen and (max-width: 760px) {
+
+  .header {
+
+    grid-template-columns: auto;
+    gap: 1.875rem; /* 30px */
+
+  }
+
+  .header .nav a {
+
+    font-size: 1rem; /* 16px */
+
+  }
+
+  .navigation .nav  {
+
+    gap: 0.625rem; /* 10px */
+
+  }
+
+}
+
 /* ? SIDENAV */
 
 .sidenav {
@@ -166,6 +192,72 @@ img {
 .sidenav-item a:hover {
 
   background: var(--special-color-200);
+
+}
+
+/* ? Animation Arrow right in the sidenav */
+@keyframes arrow-right {
+
+  from {
+
+    right: 1.875rem; /* 30px */
+
+  }
+
+  to {
+
+    right: 1.25rem; /* 20px */
+ 
+  }
+
+}
+
+/* ? Brackpoints 760px SIDENAV */
+@media screen and (max-width: 760px) {
+
+  body {
+
+    scroll-behavior: smooth;
+
+  }
+
+  .sidenav {
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    position: relative;
+
+  }
+
+  .sidenav::after {
+
+    content: "→";
+    position: absolute;
+    top: 0.3125rem; /* 5px */
+    right: 1.875rem; /* 30px */
+    color: var(--color-opacity-40);
+    animation: arrow-right 0.5s ease-in 0s infinite alternate;
+
+  }
+
+  .sidenav .list-sidenav{
+
+    min-width: 700px;
+
+  }
+
+  .sidenav .list-sidenav {
+
+    flex-direction: row;
+
+  }
+
+  .sidenav .list-sidenav .sidenav-item {
+
+    flex: 1 0 50px;
+
+  }
 
 }
 
