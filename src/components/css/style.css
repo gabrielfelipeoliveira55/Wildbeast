@@ -294,6 +294,17 @@ img {
 
 }
 
+/* ?  Brackpoints 600px MAIN */
+@media screen and (max-width: 600px) {
+
+  .main {
+
+    grid-template-columns: auto;
+
+  }
+  
+}
+
 /* ? Estilos Gerais do Main */
 p {
 
@@ -432,9 +443,11 @@ p {
   align-content: start;
   padding: 1.875rem; /* 30px */
   gap: 1.875rem; /* 30px */
-  /* grid-template-rows: repeat(2, 250px); */
+  grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr)); /* 150px to 9.375rem  */
 
 }
+
+/* ? footer */
 
 .footer {
 
