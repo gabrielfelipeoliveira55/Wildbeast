@@ -57,7 +57,7 @@ img {
 
 }
 
-/* ? Brackpoints 1200px GRID */
+/* ? Breakpoints 1200px GRID */
 @media screen and (max-width: 1200px) {
 
   .grid {
@@ -71,7 +71,7 @@ img {
 
 }
 
-/* ? Brackpoints 760px GRID */
+/* ? Breakpoints 760px GRID */
 @media screen and (max-width: 760px) {
 
   .grid {
@@ -133,7 +133,7 @@ img {
 
 }
 
-/* ? Brackpoints 760px NAV */
+/* ? Breakpoints 760px NAV */
 @media screen and (max-width: 760px) {
 
   .header {
@@ -212,7 +212,7 @@ img {
 
 }
 
-/* ? Brackpoints 760px SIDENAV */
+/* ? Breakpoints 760px SIDENAV */
 @media screen and (max-width: 760px) {
 
   body {
@@ -294,7 +294,7 @@ img {
 
 }
 
-/* ?  Brackpoints 600px MAIN */
+/* ?  Breakpoints 600px MAIN */
 @media screen and (max-width: 600px) {
 
   .main {
@@ -343,7 +343,7 @@ p {
 
 }
 
-/* ? Container Atrributes */
+/* ? Container Attributes */
 .container-attributes {
 
   display: flex;
@@ -352,7 +352,7 @@ p {
 
 }
 
-.atrribute {
+.attribute {
 
   width: 5rem; /* 80px */
   text-align: center;
@@ -363,7 +363,7 @@ p {
 
 }
 
-.atrribute span {
+.attribute span {
 
   display: block;
   color: var(--special-color-200);
